@@ -1,4 +1,5 @@
 <resources><string-array name="activity_broadcasts">
 <item>System TIME Register</item>
+<item>Custom Normal</item>
 </string-array>
 </resources>

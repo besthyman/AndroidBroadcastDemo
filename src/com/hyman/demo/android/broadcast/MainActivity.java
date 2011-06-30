@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
 
+import com.hyman.demo.android.broadcast.custom.normal.NormalBroadcastActivity;
 import com.hyman.demo.android.broadcast.register.system.timechanged.TimeChangedRegisterActivity;
 
 public class MainActivity extends Activity {
@@ -21,6 +22,9 @@ public class MainActivity extends Activity {
 		String value = spinner.getSelectedItem().toString();
 		if ("System TIME Register".equals(value)) {
 			Intent intent = new Intent(this, TimeChangedRegisterActivity.class);
+			MainActivity.this.startActivity(intent);
+		} else if ("Custom Normal".equals(value)) {
+			Intent intent = new Intent(this, NormalBroadcastActivity.class);
 			MainActivity.this.startActivity(intent);
 		}
     }
