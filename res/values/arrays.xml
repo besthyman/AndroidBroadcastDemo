@@ -1,4 +1,4 @@
 <resources><string-array name="activity_broadcasts">
-<item>System ACTION_TIME_CHANGED</item>
+<item>System TIME Register</item>
 </string-array>
 </resources>

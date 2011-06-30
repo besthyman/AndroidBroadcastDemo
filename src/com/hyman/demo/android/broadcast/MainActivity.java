@@ -1,9 +1,12 @@
 package com.hyman.demo.android.broadcast;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
+
+import com.hyman.demo.android.broadcast.register.system.timechanged.TimeChangedRegisterActivity;
 
 public class MainActivity extends Activity {
     /** Called when the activity is first created. */
@@ -16,9 +19,9 @@ public class MainActivity extends Activity {
     public void onLoadClick(View src) {
         Spinner spinner = (Spinner) this.findViewById(R.id.broadcastsspinner);
 		String value = spinner.getSelectedItem().toString();
-		if ("System ACTION_TIME_CHANGED".equals(value)) {
-//			Intent intent = new Intent(this, TimeChangedActivity.class);
-//			MainActivity.this.startActivity(intent);
+		if ("System TIME Register".equals(value)) {
+			Intent intent = new Intent(this, TimeChangedRegisterActivity.class);
+			MainActivity.this.startActivity(intent);
 		}
     }
 }
