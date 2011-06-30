@@ -1,0 +1,4 @@
+<resources><string-array name="activity_broadcasts">
+<item>System ACTION_TIME_CHANGED</item>
+</string-array>
+</resources>
