@@ -23,6 +23,9 @@
         
         <activity android:name=".custom.normal.NormalBroadcastActivity"
                   android:label="NormalBroadcastActivity"/>
+                  
+        <activity android:name=".custom.ordered.OrderedBroadcastActivity"
+                  android:label="OrderedBroadcastActivity"/>
 
     </application>
 
