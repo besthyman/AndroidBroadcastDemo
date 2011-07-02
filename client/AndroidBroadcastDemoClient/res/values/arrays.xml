@@ -1,7 +1,4 @@
 <resources><string-array name="activity_broadcasts">
-<item>System TIME Register</item>
-<item>Custom Normal</item>
-<item>Custom Ordered</item>
 <item>Custom Permission</item>
 </string-array>
 </resources>

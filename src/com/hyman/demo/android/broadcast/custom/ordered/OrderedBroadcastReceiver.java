@@ -5,7 +5,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-
+/*
+ * 
+ * Content.sendOrderedBroadcast, resultReceiver, 
+ * Intent.setPriority, 
+ * BroadcastReceiver.getResultExtras, BroadcastReceiver.abortBroadcast
+ */
 public class OrderedBroadcastReceiver extends BroadcastReceiver {
 	private static final String TAG = "OrderedBroadcastReceiver";
 	private static String EXTRA_MESSAGE = "extra message";

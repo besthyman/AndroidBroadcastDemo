@@ -18,6 +18,12 @@
 			</intent-filter>
         </receiver>
         
+		<receiver android:name=".system.bootcompleted.BootCompletedReceiver">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED"></action>
+			</intent-filter>
+		</receiver>
+        
         <activity android:name=".register.system.timechanged.TimeChangedRegisterActivity"
                   android:label="TimeChangedRegisterActivity"/>
         
@@ -26,8 +32,18 @@
                   
         <activity android:name=".custom.ordered.OrderedBroadcastActivity"
                   android:label="OrderedBroadcastActivity"/>
+                  
+        <activity android:name=".custom.permission.PermissionBroadcastActivity"
+                  android:label="PermissionBroadcastActivity"/>
 
     </application>
-
-
+    
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	
+	<!-- 
+ 	<permission
+         android:name="com.hyman.demo.android.broadcast.permission.PERMISSION_PERMISSION" >
+     </permission> 
+	<uses-permission android:name="com.hyman.demo.android.broadcast.permission.PERMISSION_PERMISSION"></uses-permission>
+	 -->
 </manifest> 

@@ -8,6 +8,7 @@ import android.widget.Spinner;
 
 import com.hyman.demo.android.broadcast.custom.normal.NormalBroadcastActivity;
 import com.hyman.demo.android.broadcast.custom.ordered.OrderedBroadcastActivity;
+import com.hyman.demo.android.broadcast.custom.permission.PermissionBroadcastActivity;
 import com.hyman.demo.android.broadcast.register.system.timechanged.TimeChangedRegisterActivity;
 
 public class MainActivity extends Activity {
@@ -29,6 +30,9 @@ public class MainActivity extends Activity {
 			MainActivity.this.startActivity(intent);
 		} else if ("Custom Ordered".equals(value)) {
 			Intent intent = new Intent(this, OrderedBroadcastActivity.class);
+			MainActivity.this.startActivity(intent);
+		} else if ("Custom Permission".equals(value)) {
+			Intent intent = new Intent(this, PermissionBroadcastActivity.class);
 			MainActivity.this.startActivity(intent);
 		}
     }

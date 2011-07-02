@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical"
+    >
+<Button
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="Send"
+    android:onClick="onSendClick"
+    />
+<Button
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="SendPermission"
+    android:onClick="onSendPermissionClick"
+    />
+<Button
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="SendTime"
+    android:onClick="onSendTimeClick"
+    />
+<Button
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text="SendBoot"
+    android:onClick="onSendBootClick"
+    />
+</LinearLayout>

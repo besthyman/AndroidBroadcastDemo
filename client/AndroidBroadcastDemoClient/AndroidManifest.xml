@@ -17,7 +17,34 @@
         			<action android:name="com.hyman.demo.android.broadcast.normal.Normal"></action>
 			</intent-filter>
         </receiver>
+                  
+        <activity android:name=".custom.permission.PermissionBroadcastActivity"
+                  android:label="Client PermissionBroadcastActivity"/>
+                  
+        <receiver android:name=".custom.permission.TimeChangedReceiver">
+        	<intent-filter>
+        			<action android:name="android.intent.action.TIME_SET"></action>
+			</intent-filter>
+        </receiver>
+        
+        <receiver android:name=".custom.permission.DeclaredPermissionBroadcastReceiver"
+        	android:permission="com.hyman.demo.android.broadcast.permission.PERMISSION_PERMISSION"
+        >
+        	<intent-filter>
+        			<action android:name="com.hyman.demo.android.broadcast.permission.PERMISSION_ACTION"></action>
+			</intent-filter>
+        </receiver>
+        
+        <receiver android:name=".custom.permission.DeclaredPermissionBroadcastReceiver2">
+        	<intent-filter>
+        			<action android:name="com.hyman.demo.android.broadcast.permission.PERMISSION_ACTION"></action>
+			</intent-filter>
+        </receiver>
     </application>
-
-
+ 	
+    <!-- <permission
+         android:name="com.hyman.demo.android.broadcast.permission.PERMISSION_PERMISSION" >
+     </permission> 
+	<uses-permission android:name="com.hyman.demo.android.broadcast.permission.PERMISSION_PERMISSION"></uses-permission>
+ -->
 </manifest> 
