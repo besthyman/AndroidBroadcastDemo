@@ -15,7 +15,7 @@ public class TimeChangedRegisterActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
-        setContentView(R.layout.system_timechanged_register);
+        setContentView(R.layout.register_system_timechanged);
     }
     
     public void onRegisterClick(View src) {

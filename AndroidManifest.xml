@@ -35,10 +35,15 @@
                   
         <activity android:name=".custom.permission.PermissionBroadcastActivity"
                   android:label="PermissionBroadcastActivity"/>
+                  
+        <activity android:name=".sticky.StickyBroadcastActivity"
+                  android:label="StickyBroadcastActivity"/>
 
     </application>
     
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+	
+	<uses-permission android:name="android.permission.BROADCAST_STICKY"></uses-permission>
 	
 	<!-- 
  	<permission

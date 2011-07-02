@@ -10,6 +10,7 @@ import com.hyman.demo.android.broadcast.custom.normal.NormalBroadcastActivity;
 import com.hyman.demo.android.broadcast.custom.ordered.OrderedBroadcastActivity;
 import com.hyman.demo.android.broadcast.custom.permission.PermissionBroadcastActivity;
 import com.hyman.demo.android.broadcast.register.system.timechanged.TimeChangedRegisterActivity;
+import com.hyman.demo.android.broadcast.sticky.StickyBroadcastActivity;
 
 public class MainActivity extends Activity {
     /** Called when the activity is first created. */
@@ -33,6 +34,9 @@ public class MainActivity extends Activity {
 			MainActivity.this.startActivity(intent);
 		} else if ("Custom Permission".equals(value)) {
 			Intent intent = new Intent(this, PermissionBroadcastActivity.class);
+			MainActivity.this.startActivity(intent);
+		} else if ("Sticky".equals(value)) {
+			Intent intent = new Intent(this, StickyBroadcastActivity.class);
 			MainActivity.this.startActivity(intent);
 		}
     }
